@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
+.links:hover {
+  color: grey;
+}
