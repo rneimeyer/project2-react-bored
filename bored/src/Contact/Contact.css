@@ -1,3 +1,13 @@
 .contact {
     background-color: pink;
 }
+
+.form {
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#name, #email, #submit {
+    width: 40%
+}
