@@ -1,3 +1,7 @@
 .customized {
     background-color: aqua;
 }
+
+button:after {
+    background-color: black;
+}
