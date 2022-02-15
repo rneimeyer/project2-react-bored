@@ -1,7 +1,7 @@
 import "./Group.css";
 import { useState, useEffect } from "react";
 
-function Group() {
+function Group({ groupClass }) {
   const [choice, setChoice] = useState("");
   const [groupData, setGroupData] = useState({});
 
@@ -17,7 +17,7 @@ function Group() {
   };
 
   return (
-    <div className="customized">
+    <div className={`customized ${groupClass}`}>
       <form onSubmit={displayChoice}>
         <label>Group Number</label>
         <select

@@ -5,20 +5,26 @@ import Type from "../Type/Type";
 
 function Customized() {
   const showGroup = () => {
-    <Group />;
+    setGroupActive(true)
+    setTypeActive(false)
   };
 
   const showType = () => {
-    return <Type />;
+    setGroupActive(false)
+    setTypeActive(true)
   };
+  const [groupActive, setGroupActive] = useState(false);
+  const [typeActive, setTypeActive] = useState(false);
+  const groupClass = groupActive ? "active" : "inactive";
+  const typeClass = typeActive ? "active" : "inactive";
 
   return (
     <div className="customized">
       <h2>Make your choice!</h2>
       <button onClick={showGroup}>By Group Number</button>
       <button onClick={showType}>By Activity Type</button>
-      <Group />
-      <Type />
+      <Group groupClass={groupClass} />
+      <Type typeClass={typeClass} />
     </div>
   );
 }

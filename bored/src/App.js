@@ -5,6 +5,7 @@ import Contact from './Contact/Contact';
 import Favorites from './Favorites/Favorites';
 import Customized from './Customized/Customized';
 
+
 function App() {
   return (
     <div className="App">

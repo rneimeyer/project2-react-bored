@@ -1,7 +1,7 @@
 import "./Type.css";
 import { useState, useEffect } from "react";
 
-function Type() {
+function Type({ typeClass }) {
   const [choice, setChoice] = useState("");
   const [typeData, setTypeData] = useState({});
 
@@ -15,7 +15,7 @@ function Type() {
       .then((data) => setTypeData(data));
   };
   return (
-    <div className="customized">
+    <div className={`customized ${typeClass}`}>
       <form onSubmit={displayChoice}>
       <label>Activity Type</label>
       <select name="type" id="type" defaultValue={""} onChange={handleChoice}>
