@@ -2,9 +2,10 @@ import "./Customized.css";
 import { useState, useEffect } from "react";
 import Group from "../Group/Group";
 import Type from "../Type/Type";
+import Nav from "../Nav/Nav";
 
 function Customized() {
-  
+
   const showGroup = () => {
     setGroupActive(true)
     setTypeActive(false)
@@ -25,6 +26,8 @@ function Customized() {
   const typeClass = typeActive ? "active" : "inactive";
 
   return (
+    <>
+    <Nav />
     <div className="customized">
       <h2>Make your choice!</h2>
       <button onClick={showGroup}>By Group Number</button>
@@ -33,6 +36,7 @@ function Customized() {
       <Group groupClass={groupClass} />
       <Type typeClass={typeClass} />
     </div>
+    </>
   );
 }
 

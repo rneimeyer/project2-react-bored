@@ -1,8 +1,11 @@
 import './Contact.css';
 import {useState, useEffect} from 'react';
+import Nav from '../Nav/Nav';
 
 function Contact() {  
   return (
+    <>
+    <Nav />
       <div className="contact">
         <h2>Contact Us!</h2>
         <form className="form">
@@ -12,6 +15,7 @@ function Contact() {
           <input type="submit" id="submit" value="Submit"></input>
         </form>
       </div>
+      </>
   );
 }
 

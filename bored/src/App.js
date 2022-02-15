@@ -4,22 +4,23 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Favorites from './Favorites/Favorites';
 import Customized from './Customized/Customized';
+import Home from './Home/Home';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>BORED?</h1>
+      {/* <h1>BORED?</h1>
       <nav>
         <Link to="/customized" className="links"> Customized </Link> | 
         <Link to="/favorites" className="links"> Favorites </Link> | 
         <Link to="/contact" className="links"> Contact Us </Link> | 
         <Link to="/about" className="links"> About Creator </Link>
-      </nav>
+      </nav> */}
       <main>
         <Routes>
-          <Route path="/" element={<Navigate to ="/customized" />} />
-          <Route path="/home" element={<Navigate to ="/customized" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Navigate to ="/" />} />
           <Route path="/customized" element={<Customized />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/contact" element={<Contact />} />
