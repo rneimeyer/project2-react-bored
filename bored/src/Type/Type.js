@@ -41,6 +41,8 @@ function Type({ typeClass }) {
         <p>Price: {typeData.price}</p>
         <p>Accessibility: {typeData.accessibility}</p>
       </div>
+      <button onClick={displayChoice}>Refresh</button>
+      <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to your friend!</a>
     </div>
   );
 }

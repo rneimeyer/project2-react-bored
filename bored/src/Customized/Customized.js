@@ -4,6 +4,7 @@ import Group from "../Group/Group";
 import Type from "../Type/Type";
 
 function Customized() {
+  
   const showGroup = () => {
     setGroupActive(true)
     setTypeActive(false)
@@ -13,6 +14,11 @@ function Customized() {
     setGroupActive(false)
     setTypeActive(true)
   };
+  const clear = () => {
+    setGroupActive(false)
+    setTypeActive(false)
+  }
+
   const [groupActive, setGroupActive] = useState(false);
   const [typeActive, setTypeActive] = useState(false);
   const groupClass = groupActive ? "active" : "inactive";
@@ -23,6 +29,7 @@ function Customized() {
       <h2>Make your choice!</h2>
       <button onClick={showGroup}>By Group Number</button>
       <button onClick={showType}>By Activity Type</button>
+      <button onClick={clear}>Clear</button>
       <Group groupClass={groupClass} />
       <Type typeClass={typeClass} />
     </div>

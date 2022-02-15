@@ -43,6 +43,7 @@ function Group({ groupClass }) {
         <p>Price:{groupData.price}</p>
         <p>Accessibility:{groupData.accessibility}</p>
       </div>
+      <button onClick={displayChoice}>Refresh</button>
     </div>
   );
 }
