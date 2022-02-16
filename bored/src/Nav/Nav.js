@@ -44,7 +44,7 @@ function Nav() {
           <Link to="/customized" className="links"> Customized </Link> | 
           <Link to="/favorites" className="links"> Favorites </Link> | 
           <Link to="/contact" className="links"> Contact Us </Link> | 
-          <Link to="/about" className="links"> About Creator </Link>
+          <Link to="/about" className="links"> About </Link>
         </nav>
       </div>
     );

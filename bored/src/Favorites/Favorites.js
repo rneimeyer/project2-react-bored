@@ -1,6 +1,7 @@
 import './Favorites.css';
 import {useState, useEffect} from 'react';
 import Nav from '../Nav/Nav';
+import Carousel from 'react-bootstrap/Carousel'
 
 function Favorites({ favoriteArr, setFavoriteArr }) {  
   const [favoriteData, setFavoriteData] = useState({})
@@ -13,12 +14,16 @@ function Favorites({ favoriteArr, setFavoriteArr }) {
 
   const yourFavorites = favoriteArr.map((favorite) => {
     return (
-     <div>
+     <div key={favorite.key}>
+       <Carousel.Item className="d-bloock w-100">
+         <Carousel.Caption>
        <p>Activity:{favorite.activity}</p>
         <p>Type:{favorite.type}</p>
         <p>Participants:{favorite.participants}</p>
         <p>Price:{favorite.price}</p>
         <p>Accessibility:{favorite.accessibility}</p>
+        </Carousel.Caption>
+        </Carousel.Item>
      </div>
     )
   })
@@ -28,7 +33,8 @@ function Favorites({ favoriteArr, setFavoriteArr }) {
       return (<p>Set your favorites from the customized page!</p>)
     } else {
       return (
-        <div>{yourFavorites}
+        <div>
+          <Carousel>{yourFavorites}</Carousel>
         <button onClick={()=>{setFavoriteArr([])}}>Clear Your Favorites</button>
         </div>)
     }
