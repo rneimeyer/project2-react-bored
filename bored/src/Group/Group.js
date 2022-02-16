@@ -1,7 +1,7 @@
 import "./Group.css";
 import { useState, useEffect } from "react";
 
-function Group({ groupClass }) {
+function Group({ groupClass, favoriteArr, setFavoriteArr}) {
   const [choice, setChoice] = useState("");
   const [groupData, setGroupData] = useState({});
 
@@ -15,6 +15,17 @@ function Group({ groupClass }) {
       .then((data) => setGroupData(data));
 
   };
+
+  const addToFavorites = (favorite) => {
+      const favoritesCopy = [...favoriteArr];
+      favoritesCopy.push(favorite);
+    setFavoriteArr(favoritesCopy);
+  }
+
+  const handleClick = (event) => {
+      event.preventDefault();
+      addToFavorites(groupData)
+  }
 
   return (
     <div className={`customized ${groupClass}`}>
@@ -43,7 +54,9 @@ function Group({ groupClass }) {
         <p>Price:{groupData.price}</p>
         <p>Accessibility:{groupData.accessibility}</p>
       </div>
+      <button onClick={handleClick}>Add to Your Favorites!</button>
       <button onClick={displayChoice}>Refresh</button>
+      <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</a>
     </div>
   );
 }

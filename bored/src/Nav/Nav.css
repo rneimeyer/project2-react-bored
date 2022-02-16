@@ -10,3 +10,11 @@
     font-family: 'Rock Salt';
     font-weight: 400;
   }
+
+.act {
+    color: pink;
+}
+
+.inact {
+    color: black;
+}

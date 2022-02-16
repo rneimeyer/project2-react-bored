@@ -1,7 +1,7 @@
 import "./Type.css";
 import { useState, useEffect } from "react";
 
-function Type({ typeClass }) {
+function Type({ typeClass, favoriteArr, setFavoriteArr }) {
   const [choice, setChoice] = useState("");
   const [typeData, setTypeData] = useState({});
 
@@ -14,6 +14,18 @@ function Type({ typeClass }) {
       .then((response) => response.json())
       .then((data) => setTypeData(data));
   };
+
+  const addToFavorites = (favorite) => {
+    const favoritesCopy = [...favoriteArr];
+    favoritesCopy.push(favorite)
+      setFavoriteArr(favoritesCopy)
+}
+
+const handleClick = (event) => {
+    event.preventDefault();
+    addToFavorites(typeData)
+}
+
   return (
     <div className={`customized ${typeClass}`}>
       <form onSubmit={displayChoice}>
@@ -41,8 +53,9 @@ function Type({ typeClass }) {
         <p>Price: {typeData.price}</p>
         <p>Accessibility: {typeData.accessibility}</p>
       </div>
+      <button onClick={handleClick}>Add to Your Favorites!</button>
       <button onClick={displayChoice}>Refresh</button>
-      <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to your friend!</a>
+      <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</a>
     </div>
   );
 }

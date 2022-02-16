@@ -1,7 +1,16 @@
-h1 {
-    font-size: 15vw;
+@keyframes home {
+    from {color: blue}
+    to {color: white}
 }
-h2 {
+
+.homeName {
+    font-size: 15vw;
+    animation-name: home;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.homeH2 {
     font-size: 7vw;
 }
 h3 {
@@ -10,9 +19,12 @@ h3 {
 margin: 0 auto;
 }
 ul {
-    padding-left: 0px;;
+    padding-left: 0px;
 }
 li {
     list-style: none;
     font-size: 3vw;
 }
+
+
+

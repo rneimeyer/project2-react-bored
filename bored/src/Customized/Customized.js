@@ -4,7 +4,7 @@ import Group from "../Group/Group";
 import Type from "../Type/Type";
 import Nav from "../Nav/Nav";
 
-function Customized() {
+function Customized({ favoriteArr, setFavoriteArr }) {
 
   const showGroup = () => {
     setGroupActive(true)
