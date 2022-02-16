@@ -2,6 +2,8 @@ import './Favorites.css';
 import {useState, useEffect} from 'react';
 import Nav from '../Nav/Nav';
 import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card'
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function Favorites({ favoriteArr, setFavoriteArr }) {  
   const [favoriteData, setFavoriteData] = useState({})
@@ -15,14 +17,27 @@ function Favorites({ favoriteArr, setFavoriteArr }) {
   const yourFavorites = favoriteArr.map((favorite) => {
     return (
      <div key={favorite.key}>
-       <Carousel.Item className="d-bloock w-100">
-         <Carousel.Caption>
+       <Carousel.Item className="d-block w-100">
+
+         {/* <Carousel.Caption>
        <p>Activity:{favorite.activity}</p>
         <p>Type:{favorite.type}</p>
         <p>Participants:{favorite.participants}</p>
         <p>Price:{favorite.price}</p>
         <p>Accessibility:{favorite.accessibility}</p>
-        </Carousel.Caption>
+        </Carousel.Caption>  */}
+        <Card style={{width: '18rem'}} className="mx-auto">
+          <Card.Body>
+        <Card.Title>{favorite.activity}!</Card.Title>
+        <Card.Subtitle>{favorite.type} activity </Card.Subtitle><br/>
+        <Card.Text>{favorite.participants} participant(s)</Card.Text>
+        <Card.Text>Price Range:</Card.Text>
+        <ProgressBar variant="success" now={favorite.price*100} /><br/>
+        <Card.Text>Accessibility Range:</Card.Text>
+        <ProgressBar now={favorite.accessibility*100} /><br/>
+        </Card.Body>
+    </Card>
+
         </Carousel.Item>
      </div>
     )
