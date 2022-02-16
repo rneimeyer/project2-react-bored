@@ -29,8 +29,6 @@ function Group({ groupClass, favoriteArr, setFavoriteArr}) {
       addToFavorites(groupData)
   }
 
-//   const pricePercent = {groupData.price*100}
-
   return (
     <div className={`customized ${groupClass}`}>
       <form onSubmit={displayChoice}>

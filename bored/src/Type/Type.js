@@ -1,5 +1,7 @@
 import "./Type.css";
 import { useState, useEffect } from "react";
+import Card from 'react-bootstrap/Card'
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function Type({ typeClass, favoriteArr, setFavoriteArr }) {
   const [choice, setChoice] = useState("");
@@ -46,13 +48,17 @@ const handleClick = (event) => {
       </select>
       <input type="submit" value="See your options!" />
       </form>
-      <div>
-        <p>Activity: {typeData.activity}</p>
-        <p>Type: {typeData.type}</p>
-        <p>Participants: {typeData.participants}</p>
-        <p>Price: {typeData.price}</p>
-        <p>Accessibility: {typeData.accessibility}</p>
-      </div>
+      <Card style={{width: '18rem'}} className="mx-auto">
+          <Card.Body>
+        <Card.Title>{typeData.activity}!</Card.Title>
+        <Card.Subtitle>{typeData.type} activity </Card.Subtitle><br/>
+        <Card.Text>{typeData.participants} participant(s)</Card.Text>
+        <Card.Text>Price Range:</Card.Text>
+        <ProgressBar variant="success" now={typeData.price*100} /><br/>
+        <Card.Text>Accessibility Range:</Card.Text>
+        <ProgressBar now={typeData.accessibility*100} />
+        </Card.Body>
+    </Card>
       <button onClick={handleClick}>Add to Your Favorites!</button>
       <button onClick={displayChoice}>Refresh</button>
       <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</a>
