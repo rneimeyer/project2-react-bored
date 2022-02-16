@@ -33,8 +33,8 @@ function Customized({ favoriteArr, setFavoriteArr }) {
       <button onClick={showGroup}>By Group Number</button>
       <button onClick={showType}>By Activity Type</button>
       <button onClick={clear}>Clear</button>
-      <Group groupClass={groupClass} />
-      <Type typeClass={typeClass} />
+      <Group groupClass={groupClass} favoriteArr={favoriteArr} setFavoriteArr={setFavoriteArr} />
+      <Type typeClass={typeClass} favoriteArr={favoriteArr} setFavoriteArr={setFavoriteArr} />
     </div>
     </>
   );
