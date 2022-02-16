@@ -2,6 +2,7 @@ import "./Type.css";
 import { useState, useEffect } from "react";
 import Card from 'react-bootstrap/Card'
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import Button from 'react-bootstrap/Button'
 
 function Type({ typeClass, favoriteArr, setFavoriteArr }) {
   const [choice, setChoice] = useState("");
@@ -28,6 +29,32 @@ const handleClick = (event) => {
     addToFavorites(typeData)
 }
 
+const showCard = () => {
+    if (typeData.activity === undefined) {
+        return (
+            <div>Make your choice above to see your options!</div>
+        ) 
+    } else {
+        return (
+            <Card style={{width: '18rem'}} className="mx-auto">
+          <Card.Body>
+        <Card.Title>{typeData.activity}!</Card.Title>
+        <Card.Subtitle>{typeData.type} activity </Card.Subtitle><br/>
+        <Card.Text>{typeData.participants} participant(s)</Card.Text>
+        <Card.Text>Price Range:</Card.Text>
+        <ProgressBar variant="success" now={typeData.price*100} /><br/>
+        <Card.Text>Accessibility Range:</Card.Text>
+        <ProgressBar now={typeData.accessibility*100} /><br/>
+        <Button onClick={handleClick}>Add to Your Favorites!</Button><br/>
+    <Button onClick={displayChoice}>Refresh</Button><br/>
+    <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</Card.Link>
+        </Card.Body>
+    </Card>
+        )
+        
+    }
+}
+
   return (
     <div className={`customized ${typeClass}`}>
       <form onSubmit={displayChoice}>
@@ -48,7 +75,7 @@ const handleClick = (event) => {
       </select>
       <input type="submit" value="See your options!" />
       </form>
-      <Card style={{width: '18rem'}} className="mx-auto">
+      {/* <Card style={{width: '18rem'}} className="mx-auto">
           <Card.Body>
         <Card.Title>{typeData.activity}!</Card.Title>
         <Card.Subtitle>{typeData.type} activity </Card.Subtitle><br/>
@@ -58,10 +85,9 @@ const handleClick = (event) => {
         <Card.Text>Accessibility Range:</Card.Text>
         <ProgressBar now={typeData.accessibility*100} />
         </Card.Body>
-    </Card>
-      <button onClick={handleClick}>Add to Your Favorites!</button>
-      <button onClick={displayChoice}>Refresh</button>
-      <a href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</a>
+    </Card> */}
+    {showCard()}
+      
     </div>
   );
 }
