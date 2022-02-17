@@ -1,5 +1,5 @@
 import "./Customized.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Group from "../Group/Group";
 import Type from "../Type/Type";
 import Nav from "../Nav/Nav";

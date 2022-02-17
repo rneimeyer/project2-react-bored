@@ -1,5 +1,5 @@
 import "./Type.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from 'react-bootstrap/Card'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Button from 'react-bootstrap/Button'
@@ -47,7 +47,7 @@ const showCard = () => {
         <ProgressBar now={typeData.accessibility*100} /><br/>
         <Button onClick={handleClick}>Add to Your Favorites!</Button><br/>
     <Button onClick={displayChoice}>Refresh</Button><br/>
-    <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=${typeData}'>Send to a friend!</Card.Link>
+    <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=typeData'>Send to a friend!</Card.Link>
         </Card.Body>
     </Card>
         )

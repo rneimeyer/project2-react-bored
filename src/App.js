@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { Route, Link, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Favorites from './Favorites/Favorites';

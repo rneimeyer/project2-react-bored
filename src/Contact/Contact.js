@@ -1,5 +1,4 @@
 import './Contact.css';
-import {useState, useEffect} from 'react';
 import Nav from '../Nav/Nav';
 
 function Contact() {  

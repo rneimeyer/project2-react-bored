@@ -1,5 +1,4 @@
 import './About.css';
-import {useState, useEffect} from 'react';
 import Nav from '../Nav/Nav';
 import Card from 'react-bootstrap/Card'
 import ProgressBar from 'react-bootstrap/ProgressBar'
