@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/project2-react-bored/static/css/main.3b4bab12.css",
-    "main.js": "/project2-react-bored/static/js/main.0c78ef3a.js",
+    "main.css": "/project2-react-bored/static/css/main.4d16d4ed.css",
+    "main.js": "/project2-react-bored/static/js/main.db30f451.js",
     "index.html": "/project2-react-bored/index.html",
-    "main.3b4bab12.css.map": "/project2-react-bored/static/css/main.3b4bab12.css.map",
-    "main.0c78ef3a.js.map": "/project2-react-bored/static/js/main.0c78ef3a.js.map"
+    "main.4d16d4ed.css.map": "/project2-react-bored/static/css/main.4d16d4ed.css.map",
+    "main.db30f451.js.map": "/project2-react-bored/static/js/main.db30f451.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4bab12.css",
-    "static/js/main.0c78ef3a.js"
+    "static/css/main.4d16d4ed.css",
+    "static/js/main.db30f451.js"
   ]
 }
