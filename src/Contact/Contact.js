@@ -1,10 +1,10 @@
 import "./Contact.css";
 import Nav from "../Nav/Nav";
 
-function Contact() {
+function Contact({ colorTheme }) {
   return (
     <>
-      <Nav />
+      <Nav colorTheme={colorTheme} />
       <div className="contact">
         <h2>Contact Us!</h2>
         <form className="form">

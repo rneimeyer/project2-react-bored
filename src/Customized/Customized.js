@@ -4,7 +4,7 @@ import Group from "../Group/Group";
 import Type from "../Type/Type";
 import Nav from "../Nav/Nav";
 
-function Customized({ favoriteArr, setFavoriteArr }) {
+function Customized({ favoriteArr, setFavoriteArr, colorTheme }) {
   const showGroup = () => {
     setGroupActive(true);
     setTypeActive(false);
@@ -26,7 +26,7 @@ function Customized({ favoriteArr, setFavoriteArr }) {
 
   return (
     <>
-      <Nav />
+      <Nav colorTheme={colorTheme} />
       <div className="customized">
         <h2>Make your choice!</h2>
         <button onClick={showGroup}>By Group Number</button>
@@ -36,11 +36,13 @@ function Customized({ favoriteArr, setFavoriteArr }) {
           groupClass={groupClass}
           favoriteArr={favoriteArr}
           setFavoriteArr={setFavoriteArr}
+          colorTheme={colorTheme}
         />
         <Type
           typeClass={typeClass}
           favoriteArr={favoriteArr}
           setFavoriteArr={setFavoriteArr}
+          colorTheme={colorTheme}
         />
       </div>
     </>

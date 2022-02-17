@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Nav() {
+function Nav({ colorTheme }) {
 
   return (
     <div className="Nav">

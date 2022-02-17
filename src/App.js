@@ -9,12 +9,13 @@ import Home from "./Home/Home";
 
 function App() {
   const [favoriteArr, setFavoriteArr] = useState([]);
+  const [colorTheme,setColorTheme] = useState("")
 
   return (
     <div className="App">
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home colorTheme={colorTheme} setColorTheme={setColorTheme} />} />
           <Route path="/home" element={<Navigate to="/" />} />
           <Route
             path="/customized"
@@ -22,6 +23,7 @@ function App() {
               <Customized
                 favoriteArr={favoriteArr}
                 setFavoriteArr={setFavoriteArr}
+                colorTheme={colorTheme}
               />
             }
           />
@@ -31,11 +33,12 @@ function App() {
               <Favorites
                 favoriteArr={favoriteArr}
                 setFavoriteArr={setFavoriteArr}
+                colorTheme={colorTheme}
               />
             }
           />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact colorTheme={colorTheme} />} />
+          <Route path="/about" element={<About colorTheme={colorTheme} />} />
         </Routes>
       </main>
     </div>

@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-function Favorites({ favoriteArr, setFavoriteArr }) {
+function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
   const [favoriteData, setFavoriteData] = useState({});
   const [secondFavorite, setSecondFavorite] = useState({});
   const [thirdFavorite, setThirdFavorite] = useState({});
@@ -65,7 +65,7 @@ function Favorites({ favoriteArr, setFavoriteArr }) {
 
   return (
     <>
-      <Nav />
+      <Nav colorTheme={colorTheme} />
       <div className="favorites">
         <h2 className="favorite-titles">Fan Favorites</h2>
         <div className="cards">

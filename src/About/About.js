@@ -3,16 +3,16 @@ import Nav from "../Nav/Nav";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-function About() {
+function About({ colorTheme }) {
   return (
     <>
-      <Nav />
+      <Nav colorTheme={colorTheme} />
       <div className="about">
         <div className="about-creator">
         <h2>About the Creator</h2>
         <p>
           Hi! My name is Rebecca Neimeyer, and I developed this project to
-          showcase my knowledge of React and rendering data from an API. I hope
+          showcase my knowledge of React and rendering data from the <a href="https://www.boredapi.com" target="_blank">Bored API</a>. I hope
           this helps you find a fun activity to do when you are bored!
         </p>
         <p>Please feel free to get in touch with me via <a href="https://www.linkedin.com/in/rebecca-neimeyer" target="_blank">LinkedIn</a></p>

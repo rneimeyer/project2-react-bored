@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import Button from "react-bootstrap/Button";
 
-function Group({ groupClass, favoriteArr, setFavoriteArr }) {
+function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
   const [choice, setChoice] = useState("");
   const [groupData, setGroupData] = useState({});
 

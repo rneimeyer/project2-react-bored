@@ -2,8 +2,21 @@
     from {color: black}
     to {color: white}
 }
-.Home {
-    
+@keyframes pink{
+    from {color: #C61350}
+    to {color: #F9C5D7}
+}
+@keyframes purple {
+    from {color: #4B2F94}
+    to {color: #CBBEEA}
+}
+@keyframes blue {
+    from {color: #0034D1}
+    to {color: #B8CAFF}
+}
+@keyframes green {
+    from {color: #418F3E}
+    to {color: #CCE8CA}
 }
 .home-name {
     font-size: 15vw;
@@ -30,17 +43,86 @@ margin: 0 auto;
 
 .buttons {
     margin: 10px;
+    gap: 5px;
+}
+button {
+    padding: 5px;
 }
 
 /* PINK */
 button.pink {
-    background-color:#F06897
+    background-color:#F06897;
+    color: #F9C5D7;
+    border: 1px solid #C61350;
+}
+
+h2.pink {
+    color: #F9C5D7;
+}
+.main-link.pink:hover {
+    color: #C61350
+}
+.home-name.pink {
+    animation-name: pink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 /* PURPLE */
+button.purple {
+    background-color:#8C71D2;
+    color: #CBBEEA;
+    border: 1px solid #4B2F94;
+}
 
+h2.purple {
+    color: #CBBEEA;
+}
+.main-link.purple:hover {
+    color: #4B2F94
+}
+.home-name.purple {
+    animation-name: purple;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 /* BLUE */
-
+button.blue {
+    background-color:#527DFF;
+    color: #B8CAFF;
+    border: 1px solid #0034D1;
+}
+h2.blue {
+    color: #B8CAFF;
+}
+.main-link.blue:hover {
+    color: #0034D1
+}
+.home-name.blue {
+    animation-name: blue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 /* GREEN */
+button.green {
+    background-color:#86C983;
+    color: #CCE8CA;
+    border: 1px solid #418F3E;
+}
+h2.green {
+    color: #CCE8CA;
+}
+.main-link.green:hover {
+    color: #418F3E;
+}
+.home-name.green {
+    animation-name: green;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
