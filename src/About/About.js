@@ -19,7 +19,7 @@ function About() {
         <Card.Text>Number of participant(s)</Card.Text>
         <Card.Text>Price Range: How much does this cost on a scale of 1-10? Below shows a 5/10 on the scale.</Card.Text>
         <ProgressBar variant="success" now={50} /><br/>
-        <Card.Text>Accessibility Range: How easy is this to accomplish on a scale of 1-10? Below shows a 5/10 on the scale.</Card.Text>
+        <Card.Text>Accessibility Range: How possible is this to accomplish on a scale of 1-10? Below shows a 5/10 on the scale.</Card.Text>
         <ProgressBar now={50} />
         </Card.Body>
     </Card>
