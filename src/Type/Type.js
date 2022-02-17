@@ -47,7 +47,7 @@ const showCard = () => {
         <ProgressBar now={typeData.accessibility*100} /><br/>
         <Button onClick={handleClick}>Add to Your Favorites!</Button><br/>
     <Button onClick={displayChoice}>Refresh</Button><br/>
-    <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=typeData'>Send to a friend!</Card.Link>
+    <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)'>Send to a friend!</Card.Link>
         </Card.Body>
     </Card>
         )
@@ -75,17 +75,6 @@ const showCard = () => {
       </select>
       <input type="submit" value="See your options!" />
       </form>
-      {/* <Card style={{width: '18rem'}} className="mx-auto">
-          <Card.Body>
-        <Card.Title>{typeData.activity}!</Card.Title>
-        <Card.Subtitle>{typeData.type} activity </Card.Subtitle><br/>
-        <Card.Text>{typeData.participants} participant(s)</Card.Text>
-        <Card.Text>Price Range:</Card.Text>
-        <ProgressBar variant="success" now={typeData.price*100} /><br/>
-        <Card.Text>Accessibility Range:</Card.Text>
-        <ProgressBar now={typeData.accessibility*100} />
-        </Card.Body>
-    </Card> */}
     {showCard()}
       
     </div>

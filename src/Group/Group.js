@@ -48,7 +48,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr}) {
           <ProgressBar now={groupData.accessibility*100} /><br/>
           <Button onClick={handleClick}>Add to Your Favorites!</Button><br/>
         <Button onClick={displayChoice}>Refresh</Button><br/>
-        <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=typeData'>Send to a friend!</Card.Link>
+        <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)'>Send to a friend!</Card.Link>
           </Card.Body>
       </Card>
         )  
