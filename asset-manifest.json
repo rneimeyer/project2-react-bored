@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project2-react-bored/static/css/main.3b4bab12.css",
+    "main.js": "/project2-react-bored/static/js/main.0d93979e.js",
+    "index.html": "/project2-react-bored/index.html",
+    "main.3b4bab12.css.map": "/project2-react-bored/static/css/main.3b4bab12.css.map",
+    "main.0d93979e.js.map": "/project2-react-bored/static/js/main.0d93979e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b4bab12.css",
+    "static/js/main.0d93979e.js"
+  ]
+}
