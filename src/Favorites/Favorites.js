@@ -60,11 +60,23 @@ function Favorites({ favoriteArr, setFavoriteArr }) {
     <Nav />
       <div className="favorites">
         <h2>Fan Favorites</h2>
+        <Card style={{width: '18rem'}} className="mx-auto">
+      <Card.Body>
+        <Card.Title>{favoriteData.activity}!</Card.Title>
+        <Card.Subtitle>{favoriteData.type} activity </Card.Subtitle><br/>
+        <Card.Text>{favoriteData.participants} participant(s)</Card.Text>
+        <Card.Text>Price Range:</Card.Text>
+        <ProgressBar variant="success" now={favoriteData.price*100} /><br/>
+        <Card.Text>Accessibility Range:</Card.Text>
+        <ProgressBar now={favoriteData.accessibility*100} /><br/>
+        </Card.Body>
+    </Card>
+        {/* <h2>Fan Favorites</h2>
         <p>Activity:{favoriteData.activity}</p>
         <p>Type:{favoriteData.type}</p>
         <p>Participants:{favoriteData.participants}</p>
         <p>Price:{favoriteData.price}</p>
-        <p>Accessibility:{favoriteData.accessibility}</p>
+        <p>Accessibility:{favoriteData.accessibility}</p> */}
         </div>
         <h2>Your Favorites</h2>
       {showArr()}
