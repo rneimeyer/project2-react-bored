@@ -1,10 +1,10 @@
 import "./Group.css";
 import { useState } from "react";
-import Card from 'react-bootstrap/Card'
-import ProgressBar from 'react-bootstrap/ProgressBar'
-import Button from 'react-bootstrap/Button'
+import Card from "react-bootstrap/Card";
+import ProgressBar from "react-bootstrap/ProgressBar";
+import Button from "react-bootstrap/Button";
 
-function Group({ groupClass, favoriteArr, setFavoriteArr}) {
+function Group({ groupClass, favoriteArr, setFavoriteArr }) {
   const [choice, setChoice] = useState("");
   const [groupData, setGroupData] = useState({});
 
@@ -12,48 +12,52 @@ function Group({ groupClass, favoriteArr, setFavoriteArr}) {
     setChoice(event.target.value);
   };
   const displayChoice = (event) => {
-      event.preventDefault();
+    event.preventDefault();
     fetch(`http://www.boredapi.com/api/activity?participants=${choice}`)
       .then((response) => response.json())
       .then((data) => setGroupData(data));
-
   };
 
   const addToFavorites = (favorite) => {
-      const favoritesCopy = [...favoriteArr];
-      favoritesCopy.push(favorite);
+    const favoritesCopy = [...favoriteArr];
+    favoritesCopy.push(favorite);
     setFavoriteArr(favoritesCopy);
-  }
+  };
 
   const handleClick = (event) => {
-      event.preventDefault();
-      addToFavorites(groupData)
-  }
+    event.preventDefault();
+    addToFavorites(groupData);
+  };
 
   const showCard = () => {
     if (groupData.activity === undefined) {
-        return (
-            <div>Make your choice above to see your options!</div>
-        ) 
+      return <div>Make your choice above to see your options!</div>;
     } else {
-        return (
-            <Card style={{width: '18rem'}} className="mx-auto">
-            <Card.Body>
-          <Card.Title>{groupData.activity}!</Card.Title>
-          <Card.Subtitle>{groupData.type} activity </Card.Subtitle><br/>
-          <Card.Text>{groupData.participants} participant(s)</Card.Text>
-          <Card.Text>Price Range:</Card.Text>
-          <ProgressBar variant="success" now={groupData.price*100} /><br/>
-          <Card.Text>Accessibility Range:</Card.Text>
-          <ProgressBar now={groupData.accessibility*100} /><br/>
-          <Button onClick={handleClick}>Add to Your Favorites!</Button><br/>
-        <Button onClick={displayChoice}>Refresh</Button><br/>
-        <Card.Link href = 'mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)'>Send to a friend!</Card.Link>
+      return (
+        <Card style={{ width: "18rem" }} className="mx-auto">
+          <Card.Body>
+            <Card.Title>{groupData.activity}!</Card.Title>
+            <Card.Subtitle>{groupData.type} activity </Card.Subtitle>
+            <br />
+            <Card.Text>{groupData.participants} participant(s)</Card.Text>
+            <Card.Text>Price Range:</Card.Text>
+            <ProgressBar variant="success" now={groupData.price * 100} />
+            <br />
+            <Card.Text>Accessibility Range:</Card.Text>
+            <ProgressBar now={groupData.accessibility * 100} />
+            <br />
+            <Button onClick={handleClick}>Add to Your Favorites!</Button>
+            <br />
+            <Button onClick={displayChoice}>Refresh</Button>
+            <br />
+            <Card.Link href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)">
+              Send to a friend!
+            </Card.Link>
           </Card.Body>
-      </Card>
-        )  
-  }
-  }
+        </Card>
+      );
+    }
+  };
   return (
     <div className={`customized ${groupClass}`}>
       <form onSubmit={displayChoice}>
@@ -74,8 +78,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr}) {
         </select>
         <input type="submit" value="See your options!" />
       </form>
-{showCard()}
-      
+      {showCard()}
     </div>
   );
 }

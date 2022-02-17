@@ -1,20 +1,25 @@
-import './Home.css';
+import "./Home.css";
 import { Link } from "react-router-dom";
 
 function Home() {
-    return (
-      <div className="Home">
-        <h1 className="homeName">BORED?</h1>
-        <h2 className="homeH2">Let us help!</h2>
-        <h3><Link to="/customized" className="links">Enter Site</Link></h3>
-        {/* <ul>
-          <li><Link to="/customized" className="links"> Customized </Link></li>
-          <li><Link to="/favorites" className="links"> Favorites </Link></li>
-          <li><Link to="/contact" className="links"> Contact Us </Link></li>
-          <li><Link to="/about" className="links"> About Creator </Link></li>
-          </ul> */}
+  return (
+    <div className="Home">
+      <h1 className="home-name">BORED?</h1>
+      <h2 className="home-help">Let us help!</h2>
+      <h2>Pick Your Color</h2>
+      <div className="buttons">
+      <button className="pink">Pink</button>
+      <button className="purple">Purple</button>
+      <button className="blue">Blue</button>
+      <button className="green">Green</button>
       </div>
-    );
-  }
-  
-  export default Home;
+      <h3>
+        <Link to="/customized" className="main-link">
+          Enter Site
+        </Link>
+      </h3>
+    </div>
+  );
+}
+
+export default Home;

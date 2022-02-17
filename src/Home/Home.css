@@ -1,17 +1,20 @@
 @keyframes home {
-    from {color: blue}
+    from {color: black}
     to {color: white}
 }
-
-.homeName {
+.Home {
+    
+}
+.home-name {
     font-size: 15vw;
     animation-name: home;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     padding: 40px;
+    margin-top: 50px;
 }
-.homeH2 {
+.home-help {
     font-size: 7vw;
 }
 h3 {
@@ -19,13 +22,25 @@ h3 {
     width: 75%;
 margin: 0 auto;
 }
-ul {
-    padding-left: 0px;
-}
-li {
-    list-style: none;
-    font-size: 3vw;
+.main-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
+.buttons {
+    margin: 10px;
+}
+
+/* PINK */
+button.pink {
+    background-color:#F06897
+}
+
+/* PURPLE */
 
 
+/* BLUE */
+
+
+/* GREEN */

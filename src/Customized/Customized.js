@@ -5,20 +5,19 @@ import Type from "../Type/Type";
 import Nav from "../Nav/Nav";
 
 function Customized({ favoriteArr, setFavoriteArr }) {
-
   const showGroup = () => {
-    setGroupActive(true)
-    setTypeActive(false)
+    setGroupActive(true);
+    setTypeActive(false);
   };
 
   const showType = () => {
-    setGroupActive(false)
-    setTypeActive(true)
+    setGroupActive(false);
+    setTypeActive(true);
   };
   const clear = () => {
-    setGroupActive(false)
-    setTypeActive(false)
-  }
+    setGroupActive(false);
+    setTypeActive(false);
+  };
 
   const [groupActive, setGroupActive] = useState(false);
   const [typeActive, setTypeActive] = useState(false);
@@ -27,15 +26,23 @@ function Customized({ favoriteArr, setFavoriteArr }) {
 
   return (
     <>
-    <Nav />
-    <div className="customized">
-      <h2>Make your choice!</h2>
-      <button onClick={showGroup}>By Group Number</button>
-      <button onClick={showType}>By Activity Type</button>
-      <button onClick={clear}>Clear</button>
-      <Group groupClass={groupClass} favoriteArr={favoriteArr} setFavoriteArr={setFavoriteArr} />
-      <Type typeClass={typeClass} favoriteArr={favoriteArr} setFavoriteArr={setFavoriteArr} />
-    </div>
+      <Nav />
+      <div className="customized">
+        <h2>Make your choice!</h2>
+        <button onClick={showGroup}>By Group Number</button>
+        <button onClick={showType}>By Activity Type</button>
+        <button onClick={clear}>Clear</button>
+        <Group
+          groupClass={groupClass}
+          favoriteArr={favoriteArr}
+          setFavoriteArr={setFavoriteArr}
+        />
+        <Type
+          typeClass={typeClass}
+          favoriteArr={favoriteArr}
+          setFavoriteArr={setFavoriteArr}
+        />
+      </div>
     </>
   );
 }
