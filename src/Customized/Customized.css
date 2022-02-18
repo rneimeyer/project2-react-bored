@@ -1,10 +1,37 @@
 .customized {
+    padding: 10px;
+    height: 75vh;
 }
 
 /* PINK */
-
+.customized.pink {
+    background-color: #F9C5D7;
+    color: #F06897;
+}
+.customized.pink a {
+    color: #C61350;
+}
 /* PURPLE */
-
+.customized.purple {
+    background-color: #CBBEEA;
+    color: #8C71D2;
+}
+.customized.purple a {
+    color: #4B2F94;
+}
 /* BLUE */
-
+.customized.blue {
+    background-color: #B8CAFF;
+    color: #527DFF;
+}
+.customized.blue a {
+    color: #0034D1;
+}
 /* GREEN */
+.customized.green {
+    background-color: #CCE8CA;
+    color: #86C983;
+}
+.customized.green a {
+    color: #418F3E;
+}

@@ -13,7 +13,7 @@ function Type({ typeClass, favoriteArr, setFavoriteArr, colorTheme }) {
   };
   const displayChoice = (event) => {
     event.preventDefault();
-    fetch(`http://www.boredapi.com/api/activity?type=${choice}`)
+    fetch(`https://www.boredapi.com/api/activity?type=${choice}`)
       .then((response) => response.json())
       .then((data) => setTypeData(data));
   };

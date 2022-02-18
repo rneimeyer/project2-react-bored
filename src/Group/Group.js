@@ -13,7 +13,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
   };
   const displayChoice = (event) => {
     event.preventDefault();
-    fetch(`http://www.boredapi.com/api/activity?participants=${choice}`)
+    fetch(`https://www.boredapi.com/api/activity?participants=${choice}`)
       .then((response) => response.json())
       .then((data) => setGroupData(data));
   };
@@ -50,7 +50,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
             <br />
             <Button onClick={displayChoice}>Refresh</Button>
             <br />
-            <Card.Link href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)">
+            <Card.Link className={`${colorTheme}`}href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)">
               Send to a friend!
             </Card.Link>
           </Card.Body>

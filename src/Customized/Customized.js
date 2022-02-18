@@ -27,7 +27,7 @@ function Customized({ favoriteArr, setFavoriteArr, colorTheme }) {
   return (
     <>
       <Nav colorTheme={colorTheme} />
-      <div className="customized">
+      <div className={`customized ${colorTheme}`}>
         <h2>Make your choice!</h2>
         <button onClick={showGroup}>By Group Number</button>
         <button onClick={showType}>By Activity Type</button>

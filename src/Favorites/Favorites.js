@@ -2,7 +2,6 @@ import "./Favorites.css";
 import { useState, useEffect } from "react";
 import Nav from "../Nav/Nav";
 import Card from "react-bootstrap/Card";
-import ProgressBar from "react-bootstrap/ProgressBar";
 
 function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
   const [favoriteData, setFavoriteData] = useState({});
@@ -10,19 +9,19 @@ function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
   const [thirdFavorite, setThirdFavorite] = useState({});
 
   useEffect(() => {
-    fetch("http://www.boredapi.com/api/activity?key=5881028")
+    fetch("https://www.boredapi.com/api/activity?key=5881028")
       .then((response) => response.json())
       .then((data) => setFavoriteData(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://www.boredapi.com/api/activity?key=5490351")
+    fetch("https://www.boredapi.com/api/activity?key=5490351")
       .then((response) => response.json())
       .then((data) => setSecondFavorite(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://www.boredapi.com/api/activity?key=9765530")
+    fetch("https://www.boredapi.com/api/activity?key=9765530")
       .then((response) => response.json())
       .then((data) => setThirdFavorite(data));
   }, []);

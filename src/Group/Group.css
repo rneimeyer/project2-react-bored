@@ -7,9 +7,18 @@
 }
 
 /* PINK */
-
+Card.Link.pink {
+    color: #C61350;
+}
 /* PURPLE */
-
+Card.Link.purple {
+    color: #4B2F94;
+}
 /* BLUE */
-
+Card.Link.blue {
+    color: #0034D1;
+}
 /* GREEN */
+Card.Link.green{
+    color: #418F3E;
+}
