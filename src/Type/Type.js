@@ -77,7 +77,7 @@ function Type({ typeClass, favoriteArr, setFavoriteArr, colorTheme }) {
           <option value="music">Music</option>
           <option value="busywork">Busywork</option>
         </select>
-        <input type="submit" value="See your options!" />
+        <input type="submit" id="submit" value="See your options!" />
       </form>
       {showCard()}
     </div>

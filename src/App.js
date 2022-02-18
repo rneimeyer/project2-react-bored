@@ -12,7 +12,7 @@ function App() {
   const [colorTheme,setColorTheme] = useState("")
 
   return (
-    <div className="App">
+    <div className={`App ${colorTheme}`}>
       <main>
         <Routes>
           <Route path="/" element={<Home colorTheme={colorTheme} setColorTheme={setColorTheme} />} />

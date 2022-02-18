@@ -31,7 +31,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
 
   const showCard = () => {
     if (groupData.activity === undefined) {
-      return <div>Make your choice above to see your options!</div>;
+      return <p>Make your choice above to see your options!</p>;
     } else {
       return (
         <Card style={{ width: "18rem" }} className="mx-auto">
@@ -76,7 +76,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
-        <input type="submit" value="See your options!" />
+        <input type="submit" id="submit" value="See your options!" />
       </form>
       {showCard()}
     </div>

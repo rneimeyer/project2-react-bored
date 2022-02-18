@@ -19,6 +19,11 @@
     to {color: #CCE8CA}
 }
 
+.Home {
+    background-color: white;
+    height: 100vh;
+}
+
 .home-name {
     font-size: 15vw;
     animation-name: home;
@@ -35,7 +40,8 @@
 h3 {
     font-size: 5vw;
     width: 75%;
-margin: 0 auto;
+    margin: 10px auto;
+    padding: 10px;
 }
 .main-link {
     text-decoration: none;
@@ -44,11 +50,14 @@ margin: 0 auto;
 }
 
 .buttons {
-    margin: 10px;
-    gap: 5px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
 }
 button {
     padding: 5px;
+
 }
 
 /* PINK */
@@ -56,6 +65,7 @@ button.pink {
     background-color:#F06897;
     color: #F9C5D7;
     border: 1px solid #C61350;
+    width: 100px;
 }
 
 h2.pink {
@@ -79,6 +89,7 @@ button.purple {
     background-color:#8C71D2;
     color: #CBBEEA;
     border: 1px solid #4B2F94;
+    width: 100px;
 }
 
 h2.purple {
@@ -102,6 +113,7 @@ button.blue {
     background-color:#527DFF;
     color: #B8CAFF;
     border: 1px solid #0034D1;
+    width: 100px;
 }
 h2.blue {
     color: #B8CAFF;
@@ -124,6 +136,7 @@ button.green {
     background-color:#86C983;
     color: #CCE8CA;
     border: 1px solid #418F3E;
+    width: 100px;
 }
 h2.green {
     color: #CCE8CA;

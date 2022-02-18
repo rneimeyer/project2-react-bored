@@ -50,7 +50,7 @@ function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
         <div className="faves">
           {yourFavorites}
           </div>
-          <button
+          <button className={`favorite-button ${colorTheme}`}
             onClick={() => {
               setFavoriteArr([]);
             }}
@@ -65,7 +65,7 @@ function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
   return (
     <>
       <Nav colorTheme={colorTheme} />
-      <div className="favorites">
+      <div className={`favorites ${colorTheme}`}>
         <h2 className="favorite-titles">Fan Favorites</h2>
         <div className="cards">
         <Card style={{ width: "15rem" }} className="mx-auto first">

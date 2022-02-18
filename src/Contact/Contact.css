@@ -65,7 +65,7 @@ textarea {
 
 /* PINK */
 .contact.pink {
-    background-color: #F9C5D7;
+    /* background-color: #F9C5D7; */
     color: #F06897;
 }
 .contact.pink #submit {
@@ -78,7 +78,7 @@ textarea {
 }
 /* PURPLE */
 .contact.purple {
-    background-color: #CBBEEA;
+    /* background-color: #CBBEEA; */
     color: #8C71D2;
 }
 .contact.purple #submit {
@@ -91,7 +91,7 @@ textarea {
 }
 /* BLUE */
 .contact.blue {
-    background-color: #B8CAFF;
+    /* background-color: #B8CAFF; */
     color: #527DFF;
 }
 .contact.blue #submit {
@@ -104,7 +104,7 @@ textarea {
 }
 /* GREEN */
 .contact.green {
-    background-color: #CCE8CA;
+    /* background-color: #CCE8CA; */
     color: #86C983;
 }
 .contact.green #submit {
