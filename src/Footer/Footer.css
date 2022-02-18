@@ -1,39 +1,40 @@
 .footer {
-    background-color: white;
-    padding: 5px;
-
-    bottom: 0;
-    position: absolute;
-    /* margin-bottom: -50px; */
-    width: 100%;
-    height: 2.5rem;
+  background-color: white;
+  padding: 5px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;
 }
 
 /* PINK */
 .footer.pink {
-    color: #F06897;
+  color: #f06897;
 }
 .footer.pink a {
-    color: #C61350;
+  color: #c61350;
 }
+
 /* PURPLE */
 .footer.purple {
-    color: #8C71D2;
+  color: #8c71d2;
 }
 .footer.purple a {
-    color: #4B2F94;
+  color: #4b2f94;
 }
+
 /* BLUE */
 .footer.blue {
-    color: #527DFF;
+  color: #527dff;
 }
 .footer.blue a {
-    color: #0034D1;
+  color: #0034d1;
 }
+
 /* GREEN */
 .footer.green {
-    color: #86C983;
+  color: #86c983;
 }
 .footer.green a {
-    color: #418F3E;
+  color: #418f3e;
 }

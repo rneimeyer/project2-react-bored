@@ -1,61 +1,71 @@
 .customized {
-    padding: 10px;
-
+  padding: 10px;
+  margin: 10px;
+}
+.customized.mx-auto {
+  margin: 30px;
 }
 
 /* PINK */
 .customized.pink {
-    background-color: #F9C5D7;
-    color: #F06897;
+  background-color: #f9c5d7;
+  color: #f06897;
 }
 .customized.pink a {
-    color: #C61350;
+  color: #c61350;
 }
-.customized.pink button, .customized.pink #submit {
-    background-color: #C61350;
-    color: white;
-    border: 1px solid #F8B3CA;
-    width: 200px;
+.customized.pink button,
+.customized.pink #submit {
+  background-color: #c61350;
+  color: white;
+  border: 1px solid #f8b3ca;
+  width: 200px;
 }
+
 /* PURPLE */
 .customized.purple {
-    background-color: #CBBEEA;
-    color: #8C71D2;
+  background-color: #cbbeea;
+  color: #8c71d2;
 }
 .customized.purple a {
-    color: #4B2F94;
+  color: #4b2f94;
 }
-.customized.purple button, .customized.purple #submit{
-    background-color: #4B2F94;
-    color: white;
-    border: 1px solid #BEAFE6;
-    width: 200px;
+.customized.purple button,
+.customized.purple #submit {
+  background-color: #4b2f94;
+  color: white;
+  border: 1px solid #beafe6;
+  width: 200px;
 }
+
 /* BLUE */
 .customized.blue {
-    background-color: #B8CAFF;
-    color: #527DFF;
+  background-color: #b8caff;
+  color: #527dff;
 }
 .customized.blue a {
-    color: #0034D1;
+  color: #0034d1;
 }
-.customized.blue button, .customized.blue #submit {
-    background-color: #0034D1;
-    color: white;
-    border: 1px solid #A3BAFF;
-    width: 200px;
+.customized.blue button,
+.customized.blue #submit {
+  background-color: #0034d1;
+  color: white;
+  border: 1px solid #a3baff;
+  width: 200px;
 }
+
 /* GREEN */
 .customized.green {
-    background-color: #CCE8CA;
-    color: #86C983;
+  background-color: #cce8ca;
+  color: #86c983;
 }
 .customized.green a {
-    color: #418F3E;
+  color: #418f3e;
 }
-.customized.green button, .customized.green #submit {
-    background-color: #418F3E;
-    color: white;
-    border: 1px solid #BEE2BC;
-    width: 200px;
+.customized.green button,
+.customized.green #submit {
+  background-color: #418f3e;
+  color: white;
+  border: 1px solid #bee2bc;
+  width: 200px;
 }

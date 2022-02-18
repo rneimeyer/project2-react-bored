@@ -34,7 +34,7 @@ function Type({ typeClass, favoriteArr, setFavoriteArr, colorTheme }) {
       return <div>Make your choice above to see your options!</div>;
     } else {
       return (
-        <Card style={{ width: "18rem" }} className="mx-auto">
+        <Card style={{ width: "18rem" }} className="mx-auto cust-card">
           <Card.Body>
             <Card.Title>{typeData.activity}!</Card.Title>
             <Card.Subtitle>{typeData.type} activity </Card.Subtitle>
@@ -50,7 +50,7 @@ function Type({ typeClass, favoriteArr, setFavoriteArr, colorTheme }) {
             <br />
             <Button onClick={displayChoice}>Refresh</Button>
             <br />
-            <Card.Link href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)">
+            <Card.Link href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(***add your idea here***)">
               Send to a friend!
             </Card.Link>
           </Card.Body>

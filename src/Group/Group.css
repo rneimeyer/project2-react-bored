@@ -1,36 +1,11 @@
 .active {
-    display: grid;
+  display: grid;
 }
 
 .inactive {
-    display: none;
+  display: none;
 }
-
-/* PINK */
-/* .customized.pink #submit {
-    background-color: #C61350;
-    color: white;
-    border: 1px solid #F8B3CA;
-    width: 150px;
-} */
-/* PURPLE */
-/* .customized.purple #submit {
-    background-color: #4B2F94;
-    color: white;
-    border: 1px solid #BEAFE6;
-    width: 150px;
-} */
-/* BLUE */
-/* .customized.blue #submit {
-    background-color: #0034D1;
-    color: white;
-    border: 1px solid #A3BAFF;
-    width: 150px; }*/
-
-/* GREEN */
-/* .customized.green #submit {
-    background-color: #418F3E;
-    color: white;
-    border: 1px solid #BEE2BC;
-    width: 150px;
-} */
+.cust-card {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}

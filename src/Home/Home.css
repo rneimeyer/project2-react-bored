@@ -1,155 +1,171 @@
 @keyframes home {
-    from {color: black}
-    to {color: white}
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
 }
-@keyframes pink{
-    from {color: #C61350}
-    to {color: #F9C5D7}
+@keyframes pink {
+  from {
+    color: #c61350;
+  }
+  to {
+    color: #f9c5d7;
+  }
 }
 @keyframes purple {
-    from {color: #4B2F94}
-    to {color: #CBBEEA}
+  from {
+    color: #4b2f94;
+  }
+  to {
+    color: #cbbeea;
+  }
 }
 @keyframes blue {
-    from {color: #0034D1}
-    to {color: #B8CAFF}
+  from {
+    color: #0034d1;
+  }
+  to {
+    color: #b8caff;
+  }
 }
 @keyframes green {
-    from {color: #418F3E}
-    to {color: #CCE8CA}
+  from {
+    color: #418f3e;
+  }
+  to {
+    color: #cce8ca;
+  }
 }
 
 .Home {
-    background-color: white;
-    height: 100vh;
+  background-color: white;
+  height: 100vh;
 }
 
 .home-name {
-    font-size: 15vw;
-    animation-name: home;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+  font-size: 15vw;
+  animation-name: home;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .home-help {
-    font-size: 7vw;
+  font-size: 7vw;
 }
 h3 {
-    font-size: 5vw;
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
+  font-size: 5vw;
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
 }
 .main-link {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
 
 .buttons {
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
 }
 button {
-    padding: 5px;
-
+  padding: 5px;
 }
 
 /* PINK */
 button.pink {
-    background-color:#F06897;
-    color: #F9C5D7;
-    border: 1px solid #C61350;
-    width: 100px;
+  background-color: #f06897;
+  color: #f9c5d7;
+  border: 1px solid #c61350;
+  width: 100px;
 }
-
 h2.pink {
-    color: #F9C5D7;
+  color: #f9c5d7;
 }
 .main-link.pink {
-    color: #F06897;
+  color: #f06897;
 }
 .main-link.pink:hover {
-    color: #C61350
+  color: #c61350;
 }
 .home-name.pink {
-    animation-name: pink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: pink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* PURPLE */
 button.purple {
-    background-color:#8C71D2;
-    color: #CBBEEA;
-    border: 1px solid #4B2F94;
-    width: 100px;
+  background-color: #8c71d2;
+  color: #cbbeea;
+  border: 1px solid #4b2f94;
+  width: 100px;
 }
-
 h2.purple {
-    color: #CBBEEA;
+  color: #cbbeea;
 }
 .main-link.purple {
-    color: #8C71D2;
+  color: #8c71d2;
 }
 .main-link.purple:hover {
-    color: #4B2F94
+  color: #4b2f94;
 }
 .home-name.purple {
-    animation-name: purple;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: purple;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* BLUE */
 button.blue {
-    background-color:#527DFF;
-    color: #B8CAFF;
-    border: 1px solid #0034D1;
-    width: 100px;
+  background-color: #527dff;
+  color: #b8caff;
+  border: 1px solid #0034d1;
+  width: 100px;
 }
 h2.blue {
-    color: #B8CAFF;
+  color: #b8caff;
 }
 .main-link.blue {
-    color:#527DFF;
+  color: #527dff;
 }
 .main-link.blue:hover {
-    color: #0034D1
+  color: #0034d1;
 }
 .home-name.blue {
-    animation-name: blue;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: blue;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* GREEN */
 button.green {
-    background-color:#86C983;
-    color: #CCE8CA;
-    border: 1px solid #418F3E;
-    width: 100px;
+  background-color: #86c983;
+  color: #cce8ca;
+  border: 1px solid #418f3e;
+  width: 100px;
 }
 h2.green {
-    color: #CCE8CA;
+  color: #cce8ca;
 }
 .main-link.green {
-    color:#86C983;
+  color: #86c983;
 }
 .main-link.green:hover {
-    color: #418F3E;
+  color: #418f3e;
 }
 .home-name.green {
-    animation-name: green;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: green;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

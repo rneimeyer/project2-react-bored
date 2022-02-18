@@ -12,34 +12,35 @@
 .page-container {
   position: relative;
   min-height: 100vh;
-  width: 100%
+  width: 100%;
 }
-
 @font-face {
-  font-family: 'Handlee';
+  font-family: "Handlee";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/handlee/v12/-F6xfjBsISg9aMakPm3wowtKzig.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/handlee/v12/-F6xfjBsISg9aMakPm3wowtKzig.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
-
 @font-face {
-  font-family: 'Rock Salt';
+  font-family: "Rock Salt";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/rocksalt/v16/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/rocksalt/v16/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
-
 h1 {
-  font-family: 'Rock Salt';
+  font-family: "Rock Salt";
   font-weight: 400;
 }
-
 * {
-  font-family: 'Handlee';
+  font-family: "Handlee";
 }
-
 body {
   height: 100vh;
   width: 100%;
@@ -47,35 +48,35 @@ body {
 
 /* PINK */
 .App.pink {
-  background-color: #F9C5D7;
-  color: #F06897;
+  background-color: #f9c5d7;
+  color: #f06897;
 }
 .App.pink a {
-  color: #C61350;
+  color: #c61350;
 }
 /* PURPLE */
 .App.purple {
-  background-color: #CBBEEA;
-  color: #8C71D2;
+  background-color: #cbbeea;
+  color: #8c71d2;
 }
 .App.purple a {
-  color: #4B2F94;
+  color: #4b2f94;
 }
 
 /* BLUE */
 .App.blue {
-  background-color: #B8CAFF;
-  color: #527DFF;
+  background-color: #b8caff;
+  color: #527dff;
 }
 .App.blue a {
-  color: #0034D1;
+  color: #0034d1;
 }
 
 /* GREEN */
 .App.green {
-  background-color: #CCE8CA;
-  color: #86C983;
+  background-color: #cce8ca;
+  color: #86c983;
 }
 .App.green a {
-  color: #418F3E;
+  color: #418f3e;
 }

@@ -34,7 +34,7 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
       return <p>Make your choice above to see your options!</p>;
     } else {
       return (
-        <Card style={{ width: "18rem" }} className="mx-auto">
+        <Card style={{ width: "18rem" }} className="mx-auto cust-card">
           <Card.Body>
             <Card.Title>{groupData.activity}!</Card.Title>
             <Card.Subtitle>{groupData.type} activity </Card.Subtitle>
@@ -50,7 +50,10 @@ function Group({ groupClass, favoriteArr, setFavoriteArr, colorTheme }) {
             <br />
             <Button onClick={displayChoice}>Refresh</Button>
             <br />
-            <Card.Link className={`${colorTheme}`}href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(add your idea here)">
+            <Card.Link
+              className={`${colorTheme}`}
+              href="mailto:yourfriend@email.com?subject=Activity Idea!&body=Check out this idea!(***add your idea here***)"
+            >
               Send to a friend!
             </Card.Link>
           </Card.Body>

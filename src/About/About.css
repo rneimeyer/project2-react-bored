@@ -1,57 +1,58 @@
 .about {
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
 }
 
-
 @media only screen and (min-width: 768px) {
-.about {
+  .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 50px;
     width: 100%;
     height: 75vh;
-}
-.about-creator {
+  }
+  .about-creator {
     grid-column: 1/2;
-}
-.about-card {
+  }
+  .about-card {
     grid-column: 2/3;
+  }
 }
-}
-
 
 /* PINK */
 .about.pink {
-    background-color: #F9C5D7;
-    color: #F06897;
+  background-color: #f9c5d7;
+  color: #f06897;
 }
 .about.pink a {
-    color: #C61350;
+  color: #c61350;
 }
+
 /* PURPLE */
 .about.purple {
-    background-color: #CBBEEA;
-    color: #8C71D2;
+  background-color: #cbbeea;
+  color: #8c71d2;
 }
 .about.purple a {
-    color: #4B2F94;
+  color: #4b2f94;
 }
+
 /* BLUE */
 .about.blue {
-    background-color: #B8CAFF;
-    color: #527DFF;
+  background-color: #b8caff;
+  color: #527dff;
 }
 .about.blue a {
-    color: #0034D1;
+  color: #0034d1;
 }
+
 /* GREEN */
 .about.green {
-    background-color: #CCE8CA;
-    color: #86C983;
+  background-color: #cce8ca;
+  color: #86c983;
 }
 .about.green a {
-    color: #418F3E;
+  color: #418f3e;
 }

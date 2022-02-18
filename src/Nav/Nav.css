@@ -1,35 +1,33 @@
 @font-face {
-    font-family: 'Rock Salt';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/rocksalt/v16/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  .Nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-  }
-  .site-name {
-    font-family: 'Rock Salt';
-    font-weight: 400;
-    padding: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-  }
-  .site-name:hover {
-    color: grey;
-  }
-  .menu {
-    justify-content: flex-end;
-  }
-  /* .hamburger {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  } */
+  font-family: "Rock Salt";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/rocksalt/v16/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.site-name {
+  font-family: "Rock Salt";
+  font-weight: 400;
+  padding: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+.site-name:hover {
+  color: grey;
+}
+.menu {
+  justify-content: flex-end;
+}
 nav {
   display: block;
   font-size: 14px;
@@ -38,105 +36,84 @@ nav {
   display: inline;
   padding: 5px;
 }
-.hamburger {
-  display: none;
-}
-/* nav {
-  display: inline;
-  padding: 10px;
-}
-.links {
-  display: inline;
-  justify-content: flex-end;
-  padding: 10px;
-} */
 
-
-  @media only screen and (min-width: 768px) {
-    .site-name{
-      font-size: 50px;
-    }
-    .hamburger {
-      display: none;
-    }
-    .menu {
-      justify-content: flex-end;
-    }
-    nav {
-      display: inline;
-      padding: 10px;
-      font-size: 18px;
-    }
-    .links {
-      display: inline;
-      justify-content: flex-end;
-      padding: 10px;
-    }
+@media only screen and (min-width: 768px) {
+  .site-name {
+    font-size: 50px;
   }
-
-  @media only screen and (min-width: 1024px) {
-    nav {
-      font-size: 20px;
-    }
-    .site-name{
-      font-size: 75px;
-    }
+  nav {
+    display: inline;
+    padding: 10px;
+    font-size: 18px;
   }
+  .links {
+    display: inline;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    font-size: 20px;
+  }
+  .site-name {
+    font-size: 75px;
+  }
+}
 
 /* PINK */
 .links.pink {
-  color: #F06897;
+  color: #f06897;
 }
 .links.pink:hover {
-  color: #C61350;
+  color: #c61350;
 }
-.site-name.pink{
+.site-name.pink {
   animation-name: pink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* PURPLE */
-
 .links.purple {
-  color: #8C71D2;
+  color: #8c71d2;
 }
 .links.purple:hover {
-  color: #4B2F94
+  color: #4b2f94;
 }
-.site-name.purple{
+.site-name.purple {
   animation-name: purple;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* BLUE */
 .links.blue {
-  color:#527DFF;
+  color: #527dff;
 }
 .links.blue:hover {
-  color: #0034D1
+  color: #0034d1;
 }
-.site-name.blue{
+.site-name.blue {
   animation-name: blue;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /* GREEN */
-
 .links.green {
-  color:#86C983;
+  color: #86c983;
 }
 .links.green:hover {
-  color: #418F3E;
+  color: #418f3e;
 }
-.site-name.green{
+.site-name.green {
   animation-name: green;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

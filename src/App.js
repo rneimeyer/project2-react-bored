@@ -9,13 +9,18 @@ import Home from "./Home/Home";
 
 function App() {
   const [favoriteArr, setFavoriteArr] = useState([]);
-  const [colorTheme,setColorTheme] = useState("")
+  const [colorTheme, setColorTheme] = useState("");
 
   return (
     <div className={`App page-container ${colorTheme}`}>
       <main>
         <Routes>
-          <Route path="/" element={<Home colorTheme={colorTheme} setColorTheme={setColorTheme} />} />
+          <Route
+            path="/"
+            element={
+              <Home colorTheme={colorTheme} setColorTheme={setColorTheme} />
+            }
+          />
           <Route path="/home" element={<Navigate to="/" />} />
           <Route
             path="/customized"
@@ -37,7 +42,10 @@ function App() {
               />
             }
           />
-          <Route path="/contact" element={<Contact colorTheme={colorTheme} />} />
+          <Route
+            path="/contact"
+            element={<Contact colorTheme={colorTheme} />}
+          />
           <Route path="/about" element={<About colorTheme={colorTheme} />} />
         </Routes>
       </main>
