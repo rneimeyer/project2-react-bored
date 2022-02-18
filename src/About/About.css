@@ -1,5 +1,4 @@
 .about {
-    background-color: red;
     width: 75%;
     margin: 0 auto;
 }
@@ -16,4 +15,38 @@
 .about-card {
     grid-column: 2/3;
 }
+}
+
+
+/* PINK */
+.about.pink {
+    background-color: #F9C5D7;
+    color: #F06897;
+}
+.about.pink a {
+    color: #C61350;
+}
+/* PURPLE */
+.about.purple {
+    background-color: #CBBEEA;
+    color: #8C71D2;
+}
+.about.purple a {
+    color: #4B2F94;
+}
+/* BLUE */
+.about.blue {
+    background-color: #B8CAFF;
+    color: #527DFF;
+}
+.about.blue a {
+    color: #0034D1;
+}
+/* GREEN */
+.about.green {
+    background-color: #CCE8CA;
+    color: #86C983;
+}
+.about.green a {
+    color: #418F3E;
 }

@@ -15,6 +15,11 @@
     font-weight: 400;
     padding: 20px;
     margin-left: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .site-name:hover {
+    color: grey;
   }
   .menu {
     justify-content: flex-end;
@@ -76,3 +81,61 @@ nav {
       font-size: 75px;
     }
   }
+
+/* PINK */
+.links.pink {
+  color: #F06897;
+}
+.links.pink:hover {
+  color: #C61350;
+}
+.site-name.pink{
+  animation-name: pink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* PURPLE */
+
+.links.purple {
+  color: #8C71D2;
+}
+.links.purple:hover {
+  color: #4B2F94
+}
+.site-name.purple{
+  animation-name: purple;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* BLUE */
+.links.blue {
+  color:#527DFF;
+}
+.links.blue:hover {
+  color: #0034D1
+}
+.site-name.blue{
+  animation-name: blue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* GREEN */
+
+.links.green {
+  color:#86C983;
+}
+.links.green:hover {
+  color: #418F3E;
+}
+.site-name.green{
+  animation-name: green;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

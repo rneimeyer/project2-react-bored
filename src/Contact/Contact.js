@@ -5,7 +5,7 @@ function Contact({ colorTheme }) {
   return (
     <>
       <Nav colorTheme={colorTheme} />
-      <div className="contact">
+      <div className={`contact ${colorTheme}`}>
         <h2>Contact Us!</h2>
         <form className="form">
           <input type="text" id="name" placeholder="Name*" required></input>

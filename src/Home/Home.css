@@ -18,14 +18,16 @@
     from {color: #418F3E}
     to {color: #CCE8CA}
 }
+
 .home-name {
     font-size: 15vw;
     animation-name: home;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    padding: 40px;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 .home-help {
     font-size: 7vw;
@@ -59,6 +61,9 @@ button.pink {
 h2.pink {
     color: #F9C5D7;
 }
+.main-link.pink {
+    color: #F06897;
+}
 .main-link.pink:hover {
     color: #C61350
 }
@@ -79,6 +84,9 @@ button.purple {
 h2.purple {
     color: #CBBEEA;
 }
+.main-link.purple {
+    color: #8C71D2;
+}
 .main-link.purple:hover {
     color: #4B2F94
 }
@@ -98,6 +106,9 @@ button.blue {
 h2.blue {
     color: #B8CAFF;
 }
+.main-link.blue {
+    color:#527DFF;
+}
 .main-link.blue:hover {
     color: #0034D1
 }
@@ -116,6 +127,9 @@ button.green {
 }
 h2.green {
     color: #CCE8CA;
+}
+.main-link.green {
+    color:#86C983;
 }
 .main-link.green:hover {
     color: #418F3E;

@@ -7,7 +7,7 @@ function About({ colorTheme }) {
   return (
     <>
       <Nav colorTheme={colorTheme} />
-      <div className="about">
+      <div className={`about ${colorTheme}`}>
         <div className="about-creator">
         <h2>About the Creator</h2>
         <p>
@@ -15,7 +15,7 @@ function About({ colorTheme }) {
           showcase my knowledge of React and rendering data from the <a href="https://www.boredapi.com" target="_blank">Bored API</a>. I hope
           this helps you find a fun activity to do when you are bored!
         </p>
-        <p>Please feel free to get in touch with me via <a href="https://www.linkedin.com/in/rebecca-neimeyer" target="_blank">LinkedIn</a></p>
+        <p>Please feel free to get in touch with me via <a href="https://www.linkedin.com/in/rebecca-neimeyer" target="_blank">LinkedIn</a>!</p>
         </div>
         <div className="about-card">
         <h2>Activity Card Key</h2>
