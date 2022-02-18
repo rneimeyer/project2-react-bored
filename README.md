@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- [add your github repo link]()
-- [add your deployment link]()
+- [add your github repo link](https://github.com/rneimeyer/project2-react-bored)
+- [add your deployment link](https://rneimeyer.github.io/project2-react-bored/)
 
 ## Project Description
 
@@ -53,8 +53,6 @@ This project will give you activities to do if you are bored! You will be able t
 
 ## Components
 
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
-
 | Component | Description | 
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
@@ -63,23 +61,25 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Activity Type | This will render activity informaiton based on type of activity | 
 | Favorites | Renders top recommended activities | 
 | Contact Us | Contains a form for feedback submission | 
+| Nav | Contains title and links to all pages | 
+| Footer | Contains creator information | 
 
 ## Time Frame
 
 ### MVP
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create components | H | 4hrs| hrs | hrs |
-| Create Routes and Links | H | 1hr| hrs | hrs |
-| Responsive Design | H | 5hrs| hrs | hrs |
-| Adding Form for feedback | H | 3hrs| hrs | hrs |
-| Drop Down Menus | H | 3hrs| hrs | hrs |
-| Render API data in Customized | H | 4hrs| hrs | hrs |
-| Render API data in Favorites | H | 3hrs| hrs | hrs |
-| Refresh Button | H | 2hrs| hrs | hrs |
-| Send activity idea | H | 3hrs| hrs | hrs |
-| Total | H | 28hrs| hrs | hrs |
+| Create components | H | 4hrs| 6hrs | 6hrs |
+| Create Routes and Links | H | 1hr| 2hrs | 2hrs |
+| Responsive Design | H | 5hrs| 6hrs | 6hrs |
+| Adding Form for feedback | H | 3hrs| 3hrs | 3hrs |
+| Drop Down Menus | H | 3hrs| 1.5hrs | 1.5hrs |
+| Render API data in Customized | H | 4hrs| 4hrs | 4hrs |
+| Render API data in Favorites | H | 3hrs| 4hrs | 4hrs |
+| Refresh Button | H | 2hrs| 0.5hrs | 0.5hrs |
+| Send activity idea | H | 3hrs| 3hrs | 3hrs |
+| Total | H | 28hrs| 30hrs | 30hrs |
 
 
 
@@ -94,12 +94,20 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Additional Libraries
 
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/): used to create activity cards along with the buttons and progress bars displayed on the cards
+- Google Fonts: [Handlee](https://fonts.gstatic.com/s/handlee/v12/-F6xfjBsISg9aMakPm3wowtKzig.woff2) and [Rock Salt](https://fonts.gstatic.com/s/rocksalt/v16/MwQ0bhv11fWD6QsAVOZrt0M6p7NGrQ.woff2)
+- [Color Palette](https://www.colorsandfonts.com/color-system)
+- Used this resource to find a solution to keep my footer at the bottom of the screen: [resource](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I used the code below to show and hide the group component as a user clicks on the "By Group Number" button. There is CSS within the group component that will hide the component when the class is inactive and show when it is active.
 
-```
-
+```js
+  const [groupActive, setGroupActive] = useState(false);
+  const showGroup = () => {
+    setGroupActive(true);
+    setTypeActive(false);
+  };
+  const groupClass = groupActive ? "active" : "inactive";
 ```

@@ -1,6 +1,5 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { useState } from 'react'
 
 function Home({ colorTheme, setColorTheme}) {
 

@@ -1,9 +1,10 @@
 import "./Contact.css";
 import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
 
 function Contact({ colorTheme }) {
   return (
-    <>
+    <div className="page-container">
       <Nav colorTheme={colorTheme} />
       <div className={`contact ${colorTheme}`}>
         <h2>Contact Us!</h2>
@@ -19,7 +20,8 @@ function Contact({ colorTheme }) {
           <input type="submit" id="submit" value="Submit"></input>
         </form>
       </div>
-    </>
+      <Footer colorTheme={colorTheme} />
+    </div>
   );
 }
 

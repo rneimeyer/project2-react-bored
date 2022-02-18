@@ -1,6 +1,7 @@
 import "./Favorites.css";
 import { useState, useEffect } from "react";
 import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
 import Card from "react-bootstrap/Card";
 
 function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
@@ -47,10 +48,9 @@ function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
     } else {
       return (
         <div>
-        <div className="faves">
-          {yourFavorites}
-          </div>
-          <button className={`favorite-button ${colorTheme}`}
+          <div className="faves">{yourFavorites}</div>
+          <button
+            className={`favorite-button ${colorTheme}`}
             onClick={() => {
               setFavoriteArr([]);
             }}
@@ -63,40 +63,51 @@ function Favorites({ favoriteArr, setFavoriteArr, colorTheme }) {
   };
 
   return (
-    <>
+    <div className="page-container">
       <Nav colorTheme={colorTheme} />
-      <div className={`favorites ${colorTheme}`}>
-        <h2 className="favorite-titles">Fan Favorites</h2>
-        <div className="cards">
-        <Card style={{ width: "15rem" }} className="mx-auto first">
-          <Card.Body>
-            <Card.Title>{favoriteData.activity}!</Card.Title>
-            <Card.Subtitle>{favoriteData.type} activity </Card.Subtitle>
-            <br />
-            <Card.Text>{favoriteData.participants} participant(s)</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "15rem" }} className="mx-auto second">
-          <Card.Body>
-            <Card.Title>{secondFavorite.activity}!</Card.Title>
-            <Card.Subtitle>{secondFavorite.type} activity </Card.Subtitle>
-            <br />
-            <Card.Text>{secondFavorite.participants} participant(s)</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "15rem" }} className="mx-auto third">
-          <Card.Body>
-            <Card.Title>{thirdFavorite.activity}!</Card.Title>
-            <Card.Subtitle>{thirdFavorite.type} activity </Card.Subtitle>
-            <br />
-            <Card.Text>{thirdFavorite.participants} participant(s)</Card.Text>
-          </Card.Body>
-        </Card>
+      <div className="all-faves">
+        <div className={`favorites ${colorTheme}`}>
+          <h2 className="favorite-titles">Fan Favorites</h2>
+          <div className="cards">
+            <Card style={{ width: "15rem" }} className="mx-auto first">
+              <Card.Body>
+                <Card.Title>{favoriteData.activity}!</Card.Title>
+                <Card.Subtitle>{favoriteData.type} activity </Card.Subtitle>
+                <br />
+                <Card.Text>
+                  {favoriteData.participants} participant(s)
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: "15rem" }} className="mx-auto second">
+              <Card.Body>
+                <Card.Title>{secondFavorite.activity}!</Card.Title>
+                <Card.Subtitle>{secondFavorite.type} activity </Card.Subtitle>
+                <br />
+                <Card.Text>
+                  {secondFavorite.participants} participant(s)
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: "15rem" }} className="mx-auto third">
+              <Card.Body>
+                <Card.Title>{thirdFavorite.activity}!</Card.Title>
+                <Card.Subtitle>{thirdFavorite.type} activity </Card.Subtitle>
+                <br />
+                <Card.Text>
+                  {thirdFavorite.participants} participant(s)
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+        <div className={`your-faves ${colorTheme}`}>
+          <h2 className="favorite-titles">Your Favorites</h2>
+          {showArr()}
         </div>
       </div>
-      <h2 className="favorite-titles">Your Favorites</h2>
-      {showArr()}
-    </>
+      <Footer colorTheme={colorTheme} />
+    </div>
   );
 }
 

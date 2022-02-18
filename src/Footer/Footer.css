@@ -1,0 +1,39 @@
+.footer {
+    background-color: white;
+    padding: 5px;
+
+    bottom: 0;
+    position: absolute;
+    /* margin-bottom: -50px; */
+    width: 100%;
+    height: 2.5rem;
+}
+
+/* PINK */
+.footer.pink {
+    color: #F06897;
+}
+.footer.pink a {
+    color: #C61350;
+}
+/* PURPLE */
+.footer.purple {
+    color: #8C71D2;
+}
+.footer.purple a {
+    color: #4B2F94;
+}
+/* BLUE */
+.footer.blue {
+    color: #527DFF;
+}
+.footer.blue a {
+    color: #0034D1;
+}
+/* GREEN */
+.footer.green {
+    color: #86C983;
+}
+.footer.green a {
+    color: #418F3E;
+}

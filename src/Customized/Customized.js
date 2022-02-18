@@ -3,6 +3,7 @@ import { useState } from "react";
 import Group from "../Group/Group";
 import Type from "../Type/Type";
 import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
 
 function Customized({ favoriteArr, setFavoriteArr, colorTheme }) {
   const showGroup = () => {
@@ -25,7 +26,7 @@ function Customized({ favoriteArr, setFavoriteArr, colorTheme }) {
   const typeClass = typeActive ? "active" : "inactive";
 
   return (
-    <>
+    <div className="page-container">
       <Nav colorTheme={colorTheme} />
       <div className={`customized ${colorTheme}`}>
         <h2>Make your choice!</h2>
@@ -45,7 +46,8 @@ function Customized({ favoriteArr, setFavoriteArr, colorTheme }) {
           colorTheme={colorTheme}
         />
       </div>
-    </>
+      <Footer colorTheme={colorTheme} />
+    </div>
   );
 }
 
